@@ -1,0 +1,125 @@
+/* Master Styles */
+html,body,h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+.outer-header{
+    width: auto;
+    height: auto;
+    min-height: 40px;
+    background-color: #fff;
+    border: solid 1px #3f3f3f;
+    border-radius: 4px;
+    padding: 5px 0;
+}
+
+.outer-body-wrapper{
+    background-color: #b5a7b6;
+}
+.content,.left-bar {
+    margin-top:5px;
+    height: 90%;
+    color: #000;
+    border: solid 1px #3f3f3f;
+    border-radius: 4px;
+}
+
+.left-bar{
+    width: 300px;
+    float: left;
+    margin-left: -100%;
+    background-color: #fff;
+}
+nav > a{
+    display: block;
+    padding: 3px 3px;
+}
+nav > a:first-child{
+    padding: 3px 3px 0 3px;
+}
+nav > a:last-child{
+    padding: 0 3px 3px 3px;
+}
+.main {
+    width: 100%;
+    float: left;
+}
+
+.content {
+    margin-left: 305px;
+}
+
+
+
+.zijin-menu-tree{
+    margin: 0px;
+    padding: 0px;
+}
+
+.zijin-menu-tree-leaf:hover{
+    cursor: pointer;
+}
+
+.zijin-menu-tree-fold{
+    height: 0px;
+    -webkit-transition: height 2s; /* Safari */
+    transition: height 2s;
+    overflow: hidden;
+}
+.label-affix:after{
+    content: ':';
+}
+
+
+
+
+.zj-panel{
+    overflow: hidden;
+    text-align: left;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.zj-panel-header{
+    background-color: #E0ECFF;
+    padding: 5px;
+    position: relative;
+}
+.zj-panel-header{
+    border-style: solid;
+    border-color: #95B8E7;
+    border-width: 1px;
+
+}
+.zj-panel-body {
+    padding: 10px;
+    border-color: #95B8E7;
+    border-width: 1px;
+    border-style: solid;
+    border-top-style:none;
+}
+
+.zj-panel-title{
+    margin:2px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0E2D5F;
+    height: 16px;
+    line-height: 16px;
+}
+
+.zj-panel-tool {
+    right: 5px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    overflow: hidden;
+}
+
+a {
+    color: #428bca;
+    text-decoration: none;
+}

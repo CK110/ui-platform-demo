@@ -1,0 +1,14 @@
+{
+  "retMsg":{
+    "code":0,
+    "msg":""
+  },
+  "data":[
+    {"id":11,"name":"Mr. Nice1","dept":"","post":"","sex":1,"birthday":"1980-09-09","addr":""},
+    {"id":12,"name":"Narco","dept":"","post":"","sex":1,"birthday":"1980-09-09","addr":""},
+    {"id":13,"name":"Bombasto","dept":"","post":"","sex":1,"birthday":"1980-09-09","addr":""},
+    {"id":14,"name":"Celeritas","dept":"","post":"","sex":1,"birthday":"1980-09-09","addr":""},
+    {"id":15,"name":"Magneta","dept":"","post":"","sex":1,"birthday":"1980-09-09","addr":""},
+    {"id":16,"name":"RubberMan","dept":"","post":"","sex":1,"birthday":"1980-09-09","addr":""}
+  ]
+}

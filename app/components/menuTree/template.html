@@ -1,0 +1,21 @@
+<ul>
+    <li *ngFor="let dataItem of dataSource">
+
+        <div [ngSwitch]="dataItem.isLeaf">
+            <template [ngSwitchWhen]="false">
+                <a style="cursor: pointer;"  (click)="dataItem.fold=!dataItem.fold">{{dataItem.name}}</a>
+            </template>
+            <template ngSwitchDefault>
+                <a style="cursor: hand;" class="zijin-menu-tree-leaf" (click)="doNavigate(dataItem.router)">{{dataItem.name}}
+                </a>
+            </template>
+        </div>
+
+        <div *ngIf="!dataItem.isLeaf"  [ngClass]="{'zijin-menu-tree-fold': dataItem.fold}">
+            <zijin-menu-tree class="zijin-menu-tree" [dataSource]="dataItem.children">
+
+            </zijin-menu-tree>
+        </div>
+
+    </li>
+</ul>

@@ -1,0 +1,26 @@
+<div class="zj-panel" [ngStyle]="{'width': width,'height':height}">
+    <div class="zj-panel-header">
+        <div class="zj-panel-title">{{title}}</div>
+        <div class="zj-panel-tool">
+            <div *ngIf="collapsible==true">
+                <a class="zj-panel-tool-collapse" (click)="test(collapsed)">
+                    <div [ngSwitch]="collapsed">
+                        <template [ngSwitchWhen]="true">折叠</template>
+                        <template [ngSwitchWhen]="false">展开</template>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="panelBody" class="zj-panel-body" [ngStyle]="{'display': display}">
+        <ng-content></ng-content>
+    </div>
+
+</div>
+
+
+<div [hidden]="true">ppp</div>
+
+
+
